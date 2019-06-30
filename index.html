@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slinding Project </title>
+
+    <style>
+        .wrapper {
+        overflow: hidden;
+        }
+
+        .sliding-background {
+        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sliding-background-wwf.jpg") repeat-x;
+        height: 560px;
+        width: 5076px;
+        animation: slide 60s linear infinite;
+        }
+        
+        .ban h1{
+            height: 100px;
+            position: absolute;
+            padding: 30px 10px 10px 10px;
+            z-index: 2;
+            color:#ffff;
+        }
+
+        @keyframes slide{
+            0%{
+                transform: translate3d(0, 0, 0);
+            }
+            100%{
+                transform: translate3d(-1692px, 0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="ban">
+            <h1>Lorem ipsum dolor...</h1>
+            <div class="sliding-background">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
